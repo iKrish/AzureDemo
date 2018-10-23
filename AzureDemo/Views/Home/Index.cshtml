@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Azure";
+}
+
+<div class="jumbotron">
+    <h1>Azure development</h1>
+    <h2>@Html.ActionLink("SQL Products", "Index", "Products")</h2>
+    <h2>@Html.ActionLink("Table Products", "Index", "ProductsFromTable")</h2>
+    <h2>@Html.ActionLink("Cosmos Products", "Index", "ProductsFromCosmos")</h2>
+    <h2>@Html.ActionLink("List of Blobs", "Index", "Blob")</h2>
+    <h2>@Html.ActionLink("Storage Account Queue", "Index", "QueueSa")</h2>
+
+</div>
+
+<div class="alert-info">
+    @System.Configuration.ConfigurationManager.AppSettings["Message"] @System.Configuration.ConfigurationManager.AppSettings["Environment"]
+</div>
+
